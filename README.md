@@ -191,4 +191,9 @@ If you have any extra URLs/IPs then give me a shout and I'll add them to the lis
 127.0.0.1 www.wip1.adobe.com<br>
 127.0.0.1 www.wip2.adobe.com<br>
 127.0.0.1 www.wip3.adobe.com<br>
-127.0.0.1 www.wip4.adobe.com
+127.0.0.1 www.wip4.adobe.com<br>
+127.0.0.1 cc-api-data.adobe.io<br>
+127.0.0.1 ic.adobe.io<br>
+127.0.0.1 genuine.adobe.com<br>
+127.0.0.1 prod.adobegenuine.com<br>
+127.0.0.1 assets.adobedtm.com<br>
