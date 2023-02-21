@@ -4,6 +4,11 @@ Make sure you run your favourite editor as Administrator to open and save the ho
 Just copy and paste the full list into your hosts file and save, This will then block all the URLs/IPs that Adobe use,
 If you have any extra URLs/IPs then give me a shout and I'll add them to the list.
 
+I've now added a hosts file you can download and use.,
+The location of the hosts file is C:\Windows\System32\drivers\etc
+You may need to checck your setting to show hidden files, Once there just overwrite with the hosts file here or add the full list to your hosts file,
+Any issues then please open an issue and I'll reply as soon as I can.
+
 127.0.0.1 192.150.14.69<br>
 127.0.0.1 192.150.18.101<br>
 127.0.0.1 192.150.18.108<br>
