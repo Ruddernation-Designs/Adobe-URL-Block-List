@@ -19,23 +19,14 @@
 # localhost name resolution is handled within DNS itself.
 #	127.0.0.1       localhost
 #	::1             localhost
-127.0.0.1 192.150.14.69
-127.0.0.1 192.150.18.101
-127.0.0.1 192.150.18.108
-127.0.0.1 192.150.22.40
-127.0.0.1 192.150.8.100
-127.0.0.1 192.150.8.118
-127.0.0.1 199.7.52.190
-127.0.0.1 199.7.52.190:80
-127.0.0.1 199.7.54.72
-127.0.0.1 199.7.54.72:80
+
+#<block-adobe>
+127.0.0.1 lfbn-mar-1-812-40.w92-150.abo.wanadoo.fr
+127.0.0.1 host-190.lax2.verisign.com
+127.0.0.1 ocsp.sfo1.verisign.com
 127.0.0.1 209-34-83-73.ood.opsource.net
-127.0.0.1 209.34.83.67
-127.0.0.1 209.34.83.67:43
-127.0.0.1 209.34.83.67:443
-127.0.0.1 209.34.83.73
-127.0.0.1 209.34.83.73:43
-127.0.0.1 209.34.83.73:443
+127.0.0.1 209-34-83-67.ood.opsource.net
+127.0.0.1 209-34-83-73.ood.opsource.net
 127.0.0.1 3dns-1.adobe.com
 127.0.0.1 3dns-2.adobe.com
 127.0.0.1 3dns-3.adobe.com
@@ -212,3 +203,10 @@
 127.0.0.1 genuine.adobe.com
 127.0.0.1 prod.adobegenuine.com
 127.0.0.1 assets.adobedtm.com
+127.0.0.1 ims-prod06.adobelogin.com
+127.0.0.1 lcs-cops.adobe.io
+127.0.0.1 8ncdzpmmrg.adobe.io
+127.0.0.1 p13n.adobe.io
+127.0.0.1 cai-identity.adobe.io
+127.0.0.1 cc-cdn.adobe.com
+#</block-adobe>
