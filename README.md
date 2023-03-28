@@ -202,3 +202,4 @@ Any issues then please open an issue and I'll reply as soon as I can.
 127.0.0.1 genuine.adobe.com<br>
 127.0.0.1 prod.adobegenuine.com<br>
 127.0.0.1 assets.adobedtm.com<br>
+127.0.0.1 4vzokhpsbs.adobe.io
