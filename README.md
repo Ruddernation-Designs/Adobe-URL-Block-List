@@ -205,4 +205,5 @@ Any issues then please open an issue and I'll reply as soon as I can.
 127.0.0.1 4vzokhpsbs.adobe.io<br>
 127.0.0.1 69tu0xswvq.adobe.io<br>
 127.0.0.1 5zgzzv92gn.adobe.io<br>
-127.0.0.1 dyzt55url8.adobe.io
+127.0.0.1 dyzt55url8.adobe.io<br>
+127.0.0.1 gw8gfjbs05.adobe.io
