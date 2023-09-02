@@ -192,11 +192,6 @@ Any issues then please open an issue and I'll reply as soon as I can.
 127.0.0.1 wwis-dubc1-vip98.adobe.com<br>
 127.0.0.1 wwis-dubc1-vip99.adobe.com<br>
 127.0.0.1 www.adobeereg.com<br>
-127.0.0.1 www.wip.adobe.com<br>
-127.0.0.1 www.wip1.adobe.com<br>
-127.0.0.1 www.wip2.adobe.com<br>
-127.0.0.1 www.wip3.adobe.com<br>
-127.0.0.1 www.wip4.adobe.com<br>
 127.0.0.1 cc-api-data.adobe.io<br>
 127.0.0.1 ic.adobe.io<br>
 127.0.0.1 genuine.adobe.com<br>
