@@ -273,3 +273,5 @@ Any issues then please open an issue and I'll reply as soon as I can.
 0.0.0.0 www.wip2.adobe.com<br>
 0.0.0.0 www.wip3.adobe.com<br>
 0.0.0.0 www.wip4.adobe.com<br>
+0.0.0.0 7m31guub0q.adobe.io<br>
+0.0.0.0 ic.adobe.io<br>
