@@ -9,7 +9,7 @@ The location of the hosts file is C:\Windows\System32\drivers\etc
 You may need to check your setting to show hidden files, Once there, then overwrite with the hosts file here or add the full list to your hosts file,
 If you have any other issues then please open an issue and I'll reply as soon as I can.
 
-#IP addresses
+#IP addresses<be>
 127.0.0.1 192.150.14.69<br>
 127.0.0.1 192.150.18.101<br>
 127.0.0.1 192.150.18.108<br>
@@ -52,7 +52,7 @@ If you have any other issues then please open an issue and I'll reply as soon as
 127.0.0.1 100.24.211.130<br>
 127.0.0.1 162.247.242.20<br>
 
-#domain names
+#domain names<br>
 127.0.0.1 3dns-1.adobe.com<br>
 127.0.0.1 3dns-2.adobe.com<br>
 127.0.0.1 3dns-3.adobe.com<br>
