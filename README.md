@@ -1,3 +1,6 @@
+# Update: I've added a new file "hosts-beta" with some seperate IPs, please try this in replace of my other hosts file and let me know the out come after you've restarted your system,
+This is thanks to @ignaciocastro as I've used the IPs from his list file.
+
 # Adobe-URL-Block-List
 This is the Adobe URL/IP block list for the Hosts file,
 Make sure you run your favourite editor as Administrator to open and save the hosts file,
