@@ -63,6 +63,8 @@
 127.0.0.1 100.24.211.130
 127.0.0.1 162.247.242.20
 #domain names
+0.0.0.0 ic.adobe.io
+0.0.0.0 b5kbg2ggog.adobe.io
 127.0.0.1 3dns-1.adobe.com
 127.0.0.1 3dns-2.adobe.com
 127.0.0.1 3dns-3.adobe.com
