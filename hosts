@@ -20,6 +20,13 @@
 #	127.0.0.1       localhost
 #	::1             localhost
 
+#New Ver 25.7
+127.0.0.1 5amul9liob.adobestats.io
+127.0.0.1 cc-api-data.adobe.io
+127.0.0.1 lcs-robs.adobe.io
+127.0.0.1 lcs-cops.adobe.io
+127.0.0.1 crs.cr.adobe.com
+127.0.0.1 36ai1uk1z7.adobestats.io
 #IPs
 127.0.0.1 192.150.14.69
 127.0.0.1 192.150.18.101
