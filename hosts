@@ -21,12 +21,17 @@
 #	::1             localhost
 
 #New Ver 25.7
+127.0.0.1 adobe.io
 127.0.0.1 5amul9liob.adobestats.io
 127.0.0.1 cc-api-data.adobe.io
 127.0.0.1 lcs-robs.adobe.io
 127.0.0.1 lcs-cops.adobe.io
 127.0.0.1 crs.cr.adobe.com
 127.0.0.1 36ai1uk1z7.adobestats.io
+127.0.0.1 cctypekit.adobe.io
+127.0.0.1 guzg78logz.adobe.io
+127.0.0.1 1hzopx6nz7.adobe.io
+127.0.0.1 ij0gdyrfka.adobe.io
 #IPs
 127.0.0.1 3.233.129.217
 127.0.0.1 192.150.14.69
@@ -251,13 +256,11 @@
 127.0.0.1 gw8gfjbs05.adobe.io
 127.0.0.1 wip.adobe.com
 127.0.0.1 199.232.114.137
-127.0.0.1 bam.nr-data.net
 127.0.0.1 www.wip.adobe.com
 127.0.0.1 www.wip1.adobe.com
 127.0.0.1 www.wip2.adobe.com
 127.0.0.1 www.wip3.adobe.com
 127.0.0.1 www.wip4.adobe.com
-127.0.0.1 k.sni.global.fastly.net
 127.0.0.1 workflow-ui-prod.licensingstack.com
 127.0.0.1 1b9khekel6.adobe.io
 127.0.0.1 adobe-dns-01.adobe.com
