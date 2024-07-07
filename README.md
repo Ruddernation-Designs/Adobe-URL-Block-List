@@ -1,3 +1,5 @@
+# Editing For PiHole That's All
+
 # Update: I've added a new file "hosts-beta" with some seperate IPs, please try this in replace of my other hosts file and let me know the out come after you've restarted your system,
 This is thanks to @ignaciocastro as I've used the IPs from his list file.
 
@@ -13,318 +15,318 @@ You may need to check your setting to show hidden files, Once there, then overwr
 If you have any other issues then please open an issue and I'll reply as soon as I can.
 
 #IP addresses<br>
-127.0.0.1 192.150.14.69<br>
-127.0.0.1 192.150.18.101<br>
-127.0.0.1 192.150.18.108<br>
-127.0.0.1 192.150.22.40<br>
-127.0.0.1 192.150.8.100<br>
-127.0.0.1 192.150.8.118<br>
-127.0.0.1 199.7.52.190<br>
-127.0.0.1 199.7.54.72<br>
-127.0.0.1 209-34-83-73.ood.opsource.net<br>
-127.0.0.1 209.34.83.67<br>
-127.0.0.1 209.34.83.73<br>
-127.0.0.1 18.207.85.246<br>
-127.0.0.1 52.6.155.20<br>
-127.0.0.1 52.10.49.85<br>
-127.0.0.1 23.22.30.141<br>
-127.0.0.1 34.215.42.13<br>
-127.0.0.1 52.84.156.37<br>
-127.0.0.1 65.8.207.109<br>
-127.0.0.1 3.220.11.113<br>
-127.0.0.1 3.221.72.231<br>
-127.0.0.1 3.216.32.253<br>
-127.0.0.1 3.208.248.199<br>
-127.0.0.1 3.219.243.226<br>
-127.0.0.1 13.227.103.57<br>
-127.0.0.1 34.192.151.90<br>
-127.0.0.1 34.237.241.83<br>
-127.0.0.1 44.240.189.42<br>
-127.0.0.1 52.20.222.155<br>
-127.0.0.1 52.208.86.132<br>
-127.0.0.1 54.208.86.132<br>
-127.0.0.1 63.140.38.120<br>
-127.0.0.1 63.140.38.160<br>
-127.0.0.1 63.140.38.169<br>
-127.0.0.1 63.140.38.219<br>
-127.0.0.1 18.228.243.121<br>
-127.0.0.1 18.230.164.221<br>
-127.0.0.1 54.156.135.114<br>
-127.0.0.1 54.221.228.134<br>
-127.0.0.1 54.224.241.105<br>
-127.0.0.1 100.24.211.130<br>
-127.0.0.1 162.247.242.20<br>
+192.150.14.69<br>
+192.150.18.101<br>
+192.150.18.108<br>
+192.150.22.40<br>
+192.150.8.100<br>
+192.150.8.118<br>
+199.7.52.190<br>
+199.7.54.72<br>
+209-34-83-73.ood.opsource.net<br>
+209.34.83.67<br>
+209.34.83.73<br>
+18.207.85.246<br>
+52.6.155.20<br>
+52.10.49.85<br>
+23.22.30.141<br>
+34.215.42.13<br>
+52.84.156.37<br>
+65.8.207.109<br>
+3.220.11.113<br>
+3.221.72.231<br>
+3.216.32.253<br>
+3.208.248.199<br>
+3.219.243.226<br>
+13.227.103.57<br>
+34.192.151.90<br>
+34.237.241.83<br>
+44.240.189.42<br>
+52.20.222.155<br>
+52.208.86.132<br>
+54.208.86.132<br>
+63.140.38.120<br>
+63.140.38.160<br>
+63.140.38.169<br>
+63.140.38.219<br>
+18.228.243.121<br>
+18.230.164.221<br>
+54.156.135.114<br>
+54.221.228.134<br>
+54.224.241.105<br>
+100.24.211.130<br>
+162.247.242.20<br>
 
 #domain names<br>
-127.0.0.1 3dns-1.adobe.com<br>
-127.0.0.1 3dns-2.adobe.com<br>
-127.0.0.1 3dns-3.adobe.com<br>
-127.0.0.1 3dns-4.adobe.com<br>
-127.0.0.1 3dns-5.adobe.com<br>
-127.0.0.1 3dns.adobe.com<br>
-127.0.0.1 activate-sea.adobe.com<br>
-127.0.0.1 activate-sea.adobe.de<br>
-127.0.0.1 activate-sjc0.adobe.com<br>
-127.0.0.1 activate-sjc0.adobe.de<br>
-127.0.0.1 activate.adobe.com<br>
-127.0.0.1 activate.adobe.de<br>
-127.0.0.1 activate.wip.adobe.com<br>
-127.0.0.1 activate.wip1.adobe.com<br>
-127.0.0.1 activate.wip2.adobe.com<br>
-127.0.0.1 activate.wip3.adobe.com<br>
-127.0.0.1 activate.wip3.adobe.de<br>
-127.0.0.1 activate.wip4.adobe.com<br>
-127.0.0.1 adobe-dns-1.adobe.com<br>
-127.0.0.1 adobe-dns-2.adobe.com<br>
-127.0.0.1 adobe-dns-2.adobe.de<br>
-127.0.0.1 adobe-dns-3.adobe.com<br>
-127.0.0.1 adobe-dns-3.adobe.de<br>
-127.0.0.1 adobe-dns-4.adobe.com<br>
-127.0.0.1 adobe-dns.adobe.com<br>
-127.0.0.1 adobe-dns.adobe.de<br>
-127.0.0.1 adobe.activate.com<br>
-127.0.0.1 adobeereg.com<br>
-127.0.0.1 cmdls.adobe.com<br>
-127.0.0.1 crl.verisign.net<br>
-127.0.0.1 ereg.adobe.com<br>
-127.0.0.1 ereg.adobe.de<br>
-127.0.0.1 ereg.wip.adobe.com<br>
-127.0.0.1 ereg.wip1.adobe.com<br>
-127.0.0.1 ereg.wip2.adobe.com<br>
-127.0.0.1 ereg.wip3.adobe.com<br>
-127.0.0.1 ereg.wip4.adobe.com<br>
-127.0.0.1 genuine.adobe.com<br>
-127.0.0.1 hlrcv.stage.adobe.com<br>
-127.0.0.1 hl2rcv.adobe.com<br>
-127.0.0.1 hl2rcv.adobe.de<br>
-127.0.0.1 ims-na1-prprod.adobelogin.com<br>
-127.0.0.1 lm.licenses.adobe.com<br>
-127.0.0.1 lmlicenses.wip4.adobe.com<br>
-127.0.0.1 na1r.services.adobe.com<br>
-127.0.0.1 na2m-pr.licenses.adobe.com<br>
-127.0.0.1 na2m-stg2.licenses.adobe.com<br>
-127.0.0.1 na4r.services.adobe.com<br>
-127.0.0.1 ocsp.spo1.verisign.com<br>
-127.0.0.1 ood.opsource.net<br>
-127.0.0.1 practivate.adobe<br>
-127.0.0.1 practivate.adobe.<br>
-127.0.0.1 practivate.adobe.com<br>
-127.0.0.1 practivate.adobe.de<br>
-127.0.0.1 practivate.adobe.ipp<br>
-127.0.0.1 practivate.adobe.newoa<br>
-127.0.0.1 practivate.adobe.ntp<br>
-127.0.0.1 prod-rel-ffc-ccm.oobesaas.adobe.com<br>
-127.0.0.1 s-2.adobe.com<br>
-127.0.0.1 s-3.adobe.com<br>
-127.0.0.1 tss-geotrust-crl.thawte.com<br>
-127.0.0.1 uds.licenses.adobe.com<br>
-127.0.0.1 dxyeyf6ecy.adobe.io<br>
-127.0.0.1 1hzopx6nz7.adobe.io<br>
-127.0.0.1 ic.adobe.io<br>
-127.0.0.1 p13n.adobe.io<br>
-127.0.0.1 ic.adobe.io<br>
-127.0.0.1 wip1.adobe.com<br>
-127.0.0.1 wip2.adobe.com<br>
-127.0.0.1 wip3.adobe.com<br>
-127.0.0.1 wip4.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip100.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip101.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip102.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip103.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip104.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip105.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip106.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip107.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip108.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip109.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip110.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip111.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip112.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip113.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip114.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip115.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip116.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip117.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip118.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip119.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip120.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip121.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip122.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip123.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip124.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip125.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip30.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip31.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip32.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip33.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip34.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip35.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip36.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip37.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip38.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip39.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip40.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip41.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip42.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip43.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip44.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip45.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip46.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip47.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip48.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip49.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip50.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip51.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip52.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip53.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip54.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip55.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip56.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip57.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip58.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip59.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip60.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip60.adobe.de<br>
-127.0.0.1 wwis-dubc1-vip61.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip62.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip63.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip64.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip65.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip66.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip67.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip68.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip69.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip70.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip71.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip72.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip73.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip74.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip75.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip76.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip77.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip78.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip79.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip80.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip81.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip82.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip83.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip84.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip85.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip86.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip87.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip88.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip89.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip90.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip91.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip92.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip93.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip94.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip95.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip96.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip97.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip98.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip99.adobe.com<br>
-127.0.0.1 www.adobeereg.com<br>
-127.0.0.1 cc-api-data.adobe.io<br>
-127.0.0.1 ic.adobe.io<br>
-127.0.0.1 genuine.adobe.com<br>
-127.0.0.1 prod.adobegenuine.com<br>
-127.0.0.1 assets.adobedtm.com<br>
-127.0.0.1 4vzokhpsbs.adobe.io<br>
-127.0.0.1 69tu0xswvq.adobe.io<br>
-127.0.0.1 5zgzzv92gn.adobe.io<br>
-127.0.0.1 dyzt55url8.adobe.io<br>
-127.0.0.1 gw8gfjbs05.adobe.io<br>
-127.0.0.1 adobeereg.com<br>
-127.0.0.1 wip.adobe.com<br>
-127.0.0.1 wip1.adobe.com<br>
-127.0.0.1 wip2.adobe.com<br>
-127.0.0.1 wip3.adobe.com<br>
-127.0.0.1 wip4.adobe.com<br>
-127.0.0.1 3dns.adobe.com<br>
-127.0.0.1 ereg.adobe.com<br>
-127.0.0.1 199.232.114.137<br>
-127.0.0.1 bam.nr-data.net<br>
-127.0.0.1 practivate.adobe<br>
-127.0.0.1 ood.opsource.net<br>
-127.0.0.1 crl.verisign.net<br>
-127.0.0.1 3dns-1.adobe.com<br>
-127.0.0.1 3dns-2.adobe.com<br>
-127.0.0.1 3dns-3.adobe.com<br>
-127.0.0.1 3dns-4.adobe.com<br>
-127.0.0.1 hl2rcv.adobe.com<br>
-127.0.0.1 genuine.adobe.com<br>
-127.0.0.1 www.adobeereg.com<br>
-127.0.0.1 www.wip.adobe.com<br>
-127.0.0.1 www.wip1.adobe.com<br>
-127.0.0.1 www.wip2.adobe.com<br>
-127.0.0.1 www.wip3.adobe.com<br>
-127.0.0.1 www.wip4.adobe.com<br>
-127.0.0.1 ereg.wip.adobe.com<br>
-127.0.0.1 ereg.wip.adobe.com<br>
-127.0.0.1 activate.adobe.com<br>
-127.0.0.1 adobe-dns.adobe.com<br>
-127.0.0.1 ereg.wip1.adobe.com<br>
-127.0.0.1 ereg.wip2.adobe.com<br>
-127.0.0.1 ereg.wip3.adobe.com<br>
-127.0.0.1 ereg.wip4.adobe.com<br>
-127.0.0.1 ereg.wip1.adobe.com<br>
-127.0.0.1 ereg.wip2.adobe.com<br>
-127.0.0.1 ereg.wip3.adobe.com<br>
-127.0.0.1 ereg.wip4.adobe.com<br>
-127.0.0.1 cc-api-data.adobe.io<br>
-127.0.0.1 practivate.adobe.ntp<br>
-127.0.0.1 practivate.adobe.ipp<br>
-127.0.0.1 practivate.adobe.com<br>
-127.0.0.1 adobe-dns-1.adobe.com<br>
-127.0.0.1 adobe-dns-2.adobe.com<br>
-127.0.0.1 adobe-dns-3.adobe.com<br>
-127.0.0.1 adobe-dns-4.adobe.com<br>
-127.0.0.1 lm.licenses.adobe.com<br>
-127.0.0.1 hlrcv.stage.adobe.com<br>
-127.0.0.1 prod.adobegenuine.com<br>
-127.0.0.1 practivate.adobe.newoa<br>
-127.0.0.1 activate.wip.adobe.com<br>
-127.0.0.1 activate-sea.adobe.com<br>
-127.0.0.1 uds.licenses.adobe.com<br>
-127.0.0.1 k.sni.global.fastly.net<br>
-127.0.0.1 activate-sjc0.adobe.com<br>
-127.0.0.1 activate.wip1.adobe.com<br>
-127.0.0.1 activate.wip2.adobe.com<br>
-127.0.0.1 activate.wip3.adobe.com<br>
-127.0.0.1 activate.wip4.adobe.com<br>
-127.0.0.1 na1r.services.adobe.com<br>
-127.0.0.1 lmlicenses.wip4.adobe.com<br>
-127.0.0.1 na2m-pr.licenses.adobe.com<br>
-127.0.0.1 wwis-dubc1-vip60.adobe.com<br>
-127.0.0.1 workflow-ui-prod.licensingstack.com<br>
-127.0.0.1 1b9khekel6.adobe.io<br>
-127.0.0.1 adobe-dns-01.adobe.com<br>
-127.0.0.1 adobe.demdex.net<br>
-127.0.0.1 adobe.tt.omtrdc.net<br>
-127.0.0.1 adobedc.demdex.net<br>
-127.0.0.1 adobeid-na1.services.adobe.com<br>
-127.0.0.1 assets.adobedtm.com<br>
-127.0.0.1 auth-cloudfront.prod.ims.adobejanus.com<br>
-127.0.0.1 auth.services.adobe.com<br>
-127.0.0.1 cai-splunk-proxy.adobe.io<br>
-127.0.0.1 cc-cdn.adobe.com<br>
-127.0.0.1 cc-cdn.adobe.com.edgekey.net<br>
-127.0.0.1 cclibraries-defaults-cdn.adobe.com<br>
-127.0.0.1 cclibraries-defaults-cdn.adobe.com.edgekey.net<br>
-127.0.0.1 cn-assets.adobedtm.com.edgekey.net<br>
-127.0.0.1 crlog-crcn.adobe.com<br>
-127.0.0.1 crs.cr.adobe.com<br>
-127.0.0.1 edgeproxy-irl1.cloud.adobe.io<br>
-127.0.0.1 ethos.ethos02-prod-irl1.ethos.adobe.net<br>
-127.0.0.1 geo2.adobe.com<br>
-127.0.0.1 lcs-cops.adobe.io<br>
-127.0.0.1 lcs-robs.adobe.io<br>
-127.0.0.1 pv2bqhsp36w.prod.cloud.adobe.io<br>
-127.0.0.1 services.prod.ims.adobejanus.com<br>
-127.0.0.1 ssl-delivery.adobe.com.edgekey.net<br>
-127.0.0.1 sstats.adobe.com<br>
-127.0.0.1 stls.adobe.com-cn.edgesuite.net<br>
-127.0.0.1 stls.adobe.com-cn.edgesuite.net.globalredir.akadns.net<br>
-127.0.0.1 use-stls.adobe.com.edgesuite.net<br>
-127.0.0.1 9ngulmtgqi.adobe.io<br>
+3dns-1.adobe.com<br>
+3dns-2.adobe.com<br>
+3dns-3.adobe.com<br>
+3dns-4.adobe.com<br>
+3dns-5.adobe.com<br>
+3dns.adobe.com<br>
+activate-sea.adobe.com<br>
+activate-sea.adobe.de<br>
+activate-sjc0.adobe.com<br>
+activate-sjc0.adobe.de<br>
+activate.adobe.com<br>
+activate.adobe.de<br>
+activate.wip.adobe.com<br>
+activate.wip1.adobe.com<br>
+activate.wip2.adobe.com<br>
+activate.wip3.adobe.com<br>
+activate.wip3.adobe.de<br>
+activate.wip4.adobe.com<br>
+adobe-dns-1.adobe.com<br>
+adobe-dns-2.adobe.com<br>
+adobe-dns-2.adobe.de<br>
+adobe-dns-3.adobe.com<br>
+adobe-dns-3.adobe.de<br>
+adobe-dns-4.adobe.com<br>
+adobe-dns.adobe.com<br>
+adobe-dns.adobe.de<br>
+adobe.activate.com<br>
+adobeereg.com<br>
+cmdls.adobe.com<br>
+crl.verisign.net<br>
+ereg.adobe.com<br>
+ereg.adobe.de<br>
+ereg.wip.adobe.com<br>
+ereg.wip1.adobe.com<br>
+ereg.wip2.adobe.com<br>
+ereg.wip3.adobe.com<br>
+ereg.wip4.adobe.com<br>
+genuine.adobe.com<br>
+hlrcv.stage.adobe.com<br>
+hl2rcv.adobe.com<br>
+hl2rcv.adobe.de<br>
+ims-na1-prprod.adobelogin.com<br>
+lm.licenses.adobe.com<br>
+lmlicenses.wip4.adobe.com<br>
+na1r.services.adobe.com<br>
+na2m-pr.licenses.adobe.com<br>
+na2m-stg2.licenses.adobe.com<br>
+na4r.services.adobe.com<br>
+ocsp.spo1.verisign.com<br>
+ood.opsource.net<br>
+practivate.adobe<br>
+practivate.adobe.<br>
+practivate.adobe.com<br>
+practivate.adobe.de<br>
+practivate.adobe.ipp<br>
+practivate.adobe.newoa<br>
+practivate.adobe.ntp<br>
+prod-rel-ffc-ccm.oobesaas.adobe.com<br>
+s-2.adobe.com<br>
+s-3.adobe.com<br>
+tss-geotrust-crl.thawte.com<br>
+uds.licenses.adobe.com<br>
+dxyeyf6ecy.adobe.io<br>
+1hzopx6nz7.adobe.io<br>
+ic.adobe.io<br>
+p13n.adobe.io<br>
+ic.adobe.io<br>
+wip1.adobe.com<br>
+wip2.adobe.com<br>
+wip3.adobe.com<br>
+wip4.adobe.com<br>
+wwis-dubc1-vip100.adobe.com<br>
+wwis-dubc1-vip101.adobe.com<br>
+wwis-dubc1-vip102.adobe.com<br>
+wwis-dubc1-vip103.adobe.com<br>
+wwis-dubc1-vip104.adobe.com<br>
+wwis-dubc1-vip105.adobe.com<br>
+wwis-dubc1-vip106.adobe.com<br>
+wwis-dubc1-vip107.adobe.com<br>
+wwis-dubc1-vip108.adobe.com<br>
+wwis-dubc1-vip109.adobe.com<br>
+wwis-dubc1-vip110.adobe.com<br>
+wwis-dubc1-vip111.adobe.com<br>
+wwis-dubc1-vip112.adobe.com<br>
+wwis-dubc1-vip113.adobe.com<br>
+wwis-dubc1-vip114.adobe.com<br>
+wwis-dubc1-vip115.adobe.com<br>
+wwis-dubc1-vip116.adobe.com<br>
+wwis-dubc1-vip117.adobe.com<br>
+wwis-dubc1-vip118.adobe.com<br>
+wwis-dubc1-vip119.adobe.com<br>
+wwis-dubc1-vip120.adobe.com<br>
+wwis-dubc1-vip121.adobe.com<br>
+wwis-dubc1-vip122.adobe.com<br>
+wwis-dubc1-vip123.adobe.com<br>
+wwis-dubc1-vip124.adobe.com<br>
+wwis-dubc1-vip125.adobe.com<br>
+wwis-dubc1-vip30.adobe.com<br>
+wwis-dubc1-vip31.adobe.com<br>
+wwis-dubc1-vip32.adobe.com<br>
+wwis-dubc1-vip33.adobe.com<br>
+wwis-dubc1-vip34.adobe.com<br>
+wwis-dubc1-vip35.adobe.com<br>
+wwis-dubc1-vip36.adobe.com<br>
+wwis-dubc1-vip37.adobe.com<br>
+wwis-dubc1-vip38.adobe.com<br>
+wwis-dubc1-vip39.adobe.com<br>
+wwis-dubc1-vip40.adobe.com<br>
+wwis-dubc1-vip41.adobe.com<br>
+wwis-dubc1-vip42.adobe.com<br>
+wwis-dubc1-vip43.adobe.com<br>
+wwis-dubc1-vip44.adobe.com<br>
+wwis-dubc1-vip45.adobe.com<br>
+wwis-dubc1-vip46.adobe.com<br>
+wwis-dubc1-vip47.adobe.com<br>
+wwis-dubc1-vip48.adobe.com<br>
+wwis-dubc1-vip49.adobe.com<br>
+wwis-dubc1-vip50.adobe.com<br>
+wwis-dubc1-vip51.adobe.com<br>
+wwis-dubc1-vip52.adobe.com<br>
+wwis-dubc1-vip53.adobe.com<br>
+wwis-dubc1-vip54.adobe.com<br>
+wwis-dubc1-vip55.adobe.com<br>
+wwis-dubc1-vip56.adobe.com<br>
+wwis-dubc1-vip57.adobe.com<br>
+wwis-dubc1-vip58.adobe.com<br>
+wwis-dubc1-vip59.adobe.com<br>
+wwis-dubc1-vip60.adobe.com<br>
+wwis-dubc1-vip60.adobe.de<br>
+wwis-dubc1-vip61.adobe.com<br>
+wwis-dubc1-vip62.adobe.com<br>
+wwis-dubc1-vip63.adobe.com<br>
+wwis-dubc1-vip64.adobe.com<br>
+wwis-dubc1-vip65.adobe.com<br>
+wwis-dubc1-vip66.adobe.com<br>
+wwis-dubc1-vip67.adobe.com<br>
+wwis-dubc1-vip68.adobe.com<br>
+wwis-dubc1-vip69.adobe.com<br>
+wwis-dubc1-vip70.adobe.com<br>
+wwis-dubc1-vip71.adobe.com<br>
+wwis-dubc1-vip72.adobe.com<br>
+wwis-dubc1-vip73.adobe.com<br>
+wwis-dubc1-vip74.adobe.com<br>
+wwis-dubc1-vip75.adobe.com<br>
+wwis-dubc1-vip76.adobe.com<br>
+wwis-dubc1-vip77.adobe.com<br>
+wwis-dubc1-vip78.adobe.com<br>
+wwis-dubc1-vip79.adobe.com<br>
+wwis-dubc1-vip80.adobe.com<br>
+wwis-dubc1-vip81.adobe.com<br>
+wwis-dubc1-vip82.adobe.com<br>
+wwis-dubc1-vip83.adobe.com<br>
+wwis-dubc1-vip84.adobe.com<br>
+wwis-dubc1-vip85.adobe.com<br>
+wwis-dubc1-vip86.adobe.com<br>
+wwis-dubc1-vip87.adobe.com<br>
+wwis-dubc1-vip88.adobe.com<br>
+wwis-dubc1-vip89.adobe.com<br>
+wwis-dubc1-vip90.adobe.com<br>
+wwis-dubc1-vip91.adobe.com<br>
+wwis-dubc1-vip92.adobe.com<br>
+wwis-dubc1-vip93.adobe.com<br>
+wwis-dubc1-vip94.adobe.com<br>
+wwis-dubc1-vip95.adobe.com<br>
+wwis-dubc1-vip96.adobe.com<br>
+wwis-dubc1-vip97.adobe.com<br>
+wwis-dubc1-vip98.adobe.com<br>
+wwis-dubc1-vip99.adobe.com<br>
+www.adobeereg.com<br>
+cc-api-data.adobe.io<br>
+ic.adobe.io<br>
+genuine.adobe.com<br>
+prod.adobegenuine.com<br>
+assets.adobedtm.com<br>
+4vzokhpsbs.adobe.io<br>
+69tu0xswvq.adobe.io<br>
+5zgzzv92gn.adobe.io<br>
+dyzt55url8.adobe.io<br>
+gw8gfjbs05.adobe.io<br>
+adobeereg.com<br>
+wip.adobe.com<br>
+wip1.adobe.com<br>
+wip2.adobe.com<br>
+wip3.adobe.com<br>
+wip4.adobe.com<br>
+3dns.adobe.com<br>
+ereg.adobe.com<br>
+199.232.114.137<br>
+bam.nr-data.net<br>
+practivate.adobe<br>
+ood.opsource.net<br>
+crl.verisign.net<br>
+3dns-1.adobe.com<br>
+3dns-2.adobe.com<br>
+3dns-3.adobe.com<br>
+3dns-4.adobe.com<br>
+hl2rcv.adobe.com<br>
+genuine.adobe.com<br>
+www.adobeereg.com<br>
+www.wip.adobe.com<br>
+www.wip1.adobe.com<br>
+www.wip2.adobe.com<br>
+www.wip3.adobe.com<br>
+www.wip4.adobe.com<br>
+ereg.wip.adobe.com<br>
+ereg.wip.adobe.com<br>
+activate.adobe.com<br>
+adobe-dns.adobe.com<br>
+ereg.wip1.adobe.com<br>
+ereg.wip2.adobe.com<br>
+ereg.wip3.adobe.com<br>
+ereg.wip4.adobe.com<br>
+ereg.wip1.adobe.com<br>
+ereg.wip2.adobe.com<br>
+ereg.wip3.adobe.com<br>
+ereg.wip4.adobe.com<br>
+cc-api-data.adobe.io<br>
+practivate.adobe.ntp<br>
+practivate.adobe.ipp<br>
+practivate.adobe.com<br>
+adobe-dns-1.adobe.com<br>
+adobe-dns-2.adobe.com<br>
+adobe-dns-3.adobe.com<br>
+adobe-dns-4.adobe.com<br>
+lm.licenses.adobe.com<br>
+hlrcv.stage.adobe.com<br>
+prod.adobegenuine.com<br>
+practivate.adobe.newoa<br>
+activate.wip.adobe.com<br>
+activate-sea.adobe.com<br>
+uds.licenses.adobe.com<br>
+k.sni.global.fastly.net<br>
+activate-sjc0.adobe.com<br>
+activate.wip1.adobe.com<br>
+activate.wip2.adobe.com<br>
+activate.wip3.adobe.com<br>
+activate.wip4.adobe.com<br>
+na1r.services.adobe.com<br>
+lmlicenses.wip4.adobe.com<br>
+na2m-pr.licenses.adobe.com<br>
+wwis-dubc1-vip60.adobe.com<br>
+workflow-ui-prod.licensingstack.com<br>
+1b9khekel6.adobe.io<br>
+adobe-dns-01.adobe.com<br>
+adobe.demdex.net<br>
+adobe.tt.omtrdc.net<br>
+adobedc.demdex.net<br>
+adobeid-na1.services.adobe.com<br>
+assets.adobedtm.com<br>
+auth-cloudfront.prod.ims.adobejanus.com<br>
+auth.services.adobe.com<br>
+cai-splunk-proxy.adobe.io<br>
+cc-cdn.adobe.com<br>
+cc-cdn.adobe.com.edgekey.net<br>
+cclibraries-defaults-cdn.adobe.com<br>
+cclibraries-defaults-cdn.adobe.com.edgekey.net<br>
+cn-assets.adobedtm.com.edgekey.net<br>
+crlog-crcn.adobe.com<br>
+crs.cr.adobe.com<br>
+edgeproxy-irl1.cloud.adobe.io<br>
+ethos.ethos02-prod-irl1.ethos.adobe.net<br>
+geo2.adobe.com<br>
+lcs-cops.adobe.io<br>
+lcs-robs.adobe.io<br>
+pv2bqhsp36w.prod.cloud.adobe.io<br>
+services.prod.ims.adobejanus.com<br>
+ssl-delivery.adobe.com.edgekey.net<br>
+sstats.adobe.com<br>
+stls.adobe.com-cn.edgesuite.net<br>
+stls.adobe.com-cn.edgesuite.net.globalredir.akadns.net<br>
+use-stls.adobe.com.edgesuite.net<br>
+9ngulmtgqi.adobe.io<br>
