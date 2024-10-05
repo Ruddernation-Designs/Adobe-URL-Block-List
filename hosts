@@ -21,8 +21,9 @@
 #	::1             localhost
 #	0.0.0.0       localhost
 
-#New Ver 25.8
+#New Ver 25.9
 0.0.0.0 adobe.io
+0.0.0.0 vgetwxoqno.adobe.io
 0.0.0.0 5amul9liob.adobestats.io
 0.0.0.0 cc-api-data.adobe.io
 0.0.0.0 lcs-robs.adobe.io
