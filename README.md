@@ -12,7 +12,7 @@ You may need to check your settings to show hidden files, Once there, then overw
 If you have any other issues, please open an issue, and I'll reply as soon as possible.
 
 
-## Update: I've now replaced the localhost IP 127.0.0.1 to 0.0.0.0
+## Update: DNSMASQ was added by LeXwDeX. Thank you LeXwDeX
 
 
 ### Editing For PiHole That's All
