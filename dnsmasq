@@ -3694,3 +3694,10 @@ config domain
         option name '49xq1olxsn.adobestats.io'
         option ip '0.0.0.0'
 
+config domain
+        option name 'cetufizozr12.mw1i8.adobestats.io'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'hbc.adobe.io'
+        option ip '0.0.0.0'
