@@ -3705,3 +3705,7 @@ config domain
 config domain
         option name 'rekkvg49.mw1i8.adobestats.io'
         option ip '0.0.0.0'
+
+config domain
+        option name 'y1sg2131f84.mw1i8.adobestats.io'
+        option ip '0.0.0.0'
