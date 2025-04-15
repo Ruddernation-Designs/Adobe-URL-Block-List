@@ -21,7 +21,10 @@
 #	::1             localhost
 #	0.0.0.0       localhost
 
-#New Ver 26.0
+#New Ver 26.1
+0.0.0.0 3d5vic7so2.adobestats.io
+0.0.0.0 o987771.ingest.us.sentry.io
+0.0.0.0 a1815.dscr.akamai.net
 0.0.0.0 adobe.io
 0.0.0.0 vgetwxoqno.adobe.io
 0.0.0.0 cc-api-data.adobe.io
