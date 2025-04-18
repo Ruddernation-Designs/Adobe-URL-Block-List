@@ -3709,3 +3709,31 @@ config domain
 config domain
         option name 'y1sg2131f84.mw1i8.adobestats.io'
         option ip '0.0.0.0'
+
+config domain
+        option name 'o987771.ingest.us.sentry.io'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'a1815.dscr.akamai.net'
+        option ip '0.0.0.0'
+
+config domain
+        option name '3d5vic7so2.adobestats.io'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'ims-na1.adobelogin.com.cdn.cloudflare.net'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'o1383653.ingest.sentry.io'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'wtl71c0ylo.adobestats.io'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'jgletrkp.mw1i8.adobestats.io'
+        option ip '0.0.0.0'
