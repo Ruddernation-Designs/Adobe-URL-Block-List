@@ -23,6 +23,16 @@
 
 #New Ver 26.0
 0.0.0.0 adobe.io
+
+0.0.0.0 adobe.io
+0.0.0.0 a1815.dscr.akamai.net
+0.0.0.0 ims-na1.adobelogin.com.cdn.cloudflare.net
+0.0.0.0 ufehqna15d.adobestats.io
+0.0.0.0 jpe8b0ogqw.adobestats.io
+0.0.0.0 j6bve6g2m0.adobestats.io
+0.0.0.0 o1383653.ingest.sentry.io
+0.0.0.0 wtl71c0ylo.adobestats.io
+0.0.0.0 3d5vic7so2.adobestats.io
 0.0.0.0 vgetwxoqno.adobe.io
 0.0.0.0 cc-api-data.adobe.io
 0.0.0.0 cctypekit.adobe.io
