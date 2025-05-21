@@ -36,8 +36,7 @@ def read_stripped(file: str, strip_lines=True):
         raise e
 
 
-def dnsmasq_fmt(*domains):
-
+def dnsmasq_fmt(*domains: tuple[str]):
     domain_list = [f"config domain\n{_INDENT}option name '{domain}'\n{_INDENT}option ip '0.0.0.0'\n"
                    for domain in domains]
 
@@ -46,15 +45,15 @@ def dnsmasq_fmt(*domains):
 
 def check_dups(arr: list[str]):
     deduped_set: set[str] = set()
-    duplicates: list[str] = []
+    duplicates_list: list[str] = []
 
     for item in arr:
         if item in deduped_set:
-            duplicates.append(item)
+            duplicates_list.append(item)
         else:
             deduped_set.add(item)
 
-    len_dups = len(duplicates)
+    len_dups = len(duplicates_list)
 
     if len_dups == 0:
         print("There are no duplicates")
@@ -62,7 +61,7 @@ def check_dups(arr: list[str]):
 
     print("Found {} duplicate(s)\n\n{}\n".format(
         len_dups,
-        whitespace_join([f"{_INDENT}- {d}" for d in duplicates])
+        whitespace_join([f"{_INDENT}- {d}" for d in duplicates_list])
     ))
 
     return list(deduped_set)
