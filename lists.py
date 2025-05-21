@@ -8,6 +8,12 @@ parser.add_argument("-RD", "--remove-duplicates",
 
 args = parser.parse_args()
 
+_INDENT = " "*2*2
+
+
+def whitespace_join(arr: list[str]):
+    return "\n".join(arr)
+
 
 def read_stripped(file: str, strip_lines=True):
     """
@@ -31,18 +37,44 @@ def read_stripped(file: str, strip_lines=True):
 
 
 def dnsmasq_fmt(*domains):
-    space_indent = " "*2*4
 
-    domain_list = [f"config domain\n{space_indent}option name '{domain}'\n{space_indent}option ip '0.0.0.0'\n"
+    domain_list = [f"config domain\n{_INDENT}option name '{domain}'\n{_INDENT}option ip '0.0.0.0'\n"
                    for domain in domains]
 
-    return "\n".join(domain_list)
+    return whitespace_join(domain_list)
+
+
+def check_dups(arr: list[str]):
+    deduped_set: set[str] = set()
+    duplicates: list[str] = []
+
+    for item in arr:
+        if item in deduped_set:
+            duplicates.append(item)
+        else:
+            deduped_set.add(item)
+
+    len_dups = len(duplicates)
+
+    if len_dups == 0:
+        print("There are no duplicates")
+        return arr
+
+    print("Found {} duplicate(s)\n\n{}\n".format(
+        len_dups,
+        whitespace_join([f"{_INDENT}- {d}" for d in duplicates])
+    ))
+
+    return list(deduped_set)
 
 
 def main():
     hosts_record = read_stripped("hosts")
     dnsmasq_record = read_stripped("dnsmasq")
     pihole_record = read_stripped("PiHole", False)
+
+    if args.remove_duplicates:
+        check_dups(hosts_record)
 
 
 if __name__ == "__main__":
