@@ -9,12 +9,20 @@ parser.add_argument("-RD", "--remove-duplicates",
 args = parser.parse_args()
 
 
-def read_stripped(file: str):
+def read_stripped(file: str, strip_lines=True):
+    """
+    This reads the file and strips out any empty and comment lines with `#`
+    """
     try:
         with open(file, "r") as f:
+            file_contents = f.readlines()
+
+            if not strip_lines:
+                return file_contents
+
             strip_comments = [l.strip()
                               if not l.startswith("#") else None
-                              for l in f.readlines()]
+                              for l in file_contents]
 
             return list(filter(None, strip_comments))
 
@@ -34,6 +42,7 @@ def dnsmasq_fmt(*domains):
 def main():
     hosts_record = read_stripped("hosts")
     dnsmasq_record = read_stripped("dnsmasq")
+    pihole_record = read_stripped("PiHole", False)
 
 
 if __name__ == "__main__":
