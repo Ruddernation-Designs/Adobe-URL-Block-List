@@ -1,14 +1,14 @@
 config domain
-				option name '3d5vic7so2.adobestats.io'
-				option ip '0.0.0.0'
+        option name '3d5vic7so2.adobestats.io'
+        option ip '0.0.0.0'
 
 config domain
-				option name 'o987771.ingest.us.sentry.io'
-				option ip '0.0.0.0'
+        option name 'o987771.ingest.us.sentry.io'
+        option ip '0.0.0.0'
 
 config domain
-				option name 'a1815.dscr.akamai.net'
-				option ip '0.0.0.0'
+        option name 'a1815.dscr.akamai.net'
+        option ip '0.0.0.0'
 
 config domain
         option name 'adobe.io'
