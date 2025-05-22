@@ -1,0 +1,2 @@
+hosts     text eol=crlf
+*         text eol=lf
