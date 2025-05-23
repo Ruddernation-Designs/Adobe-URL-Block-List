@@ -63,7 +63,7 @@ def dnsmasq_fmt(*domains: tuple[str]):
     return whitespace_join(domain_list)
 
 
-def check_dups(arr: list[tuple[int, str]]):
+def check_dups(file_str: str, arr: list[tuple[int, str]]):
     deduped_set: set[str] = set()
     duplicates_list: list[tuple[int, str]] = []
 
@@ -76,28 +76,38 @@ def check_dups(arr: list[tuple[int, str]]):
     len_dups = len(duplicates_list)
 
     if len_dups == 0:
-        print("No duplicates are found")
-        return arr
+        print("From {}: no duplicates are found".format(file_str))
+        return omit_ln(arr)
 
-    print("Found {} duplicate(s)\n\n{}\n".format(
+    print("From {}: found {} duplicate(s)\n\n{}\n".format(
+        file_str,
         len_dups,
-        whitespace_join([f"{_INDENT} ln: {ln} - {dl}" for ln, dl in duplicates_list])  # noqa
+        whitespace_join([f"{_INDENT} ln {ln} | {dl}" for ln, dl in duplicates_list])  # noqa
     ))
 
     return list(deduped_set)
 
 
 def main():
-    hosts_record = read_stripped("hosts")
-    dnsmasq_record = read_stripped("dnsmasq")
-    pihole_record = read_stripped("PiHole", False)
+    # We check for any duplicates so the script can return a proper exit status
+    _root_dup_check = []
 
-    if args.remove_duplicates:
-        print("In hosts:")
-        check_dups(hosts_record)
+    included_files = [
+        ("hosts", True),
+        ("dnsmasq", True),
+        ("PiHole", False)
+    ]
 
-        print("In PiHole:")
-        check_dups(pihole_record)
+    if args.remove_duplicates or args.check_duplicates:
+        for file, strip_comments in included_files:
+            domain_list = read_stripped(file, strip_comments=strip_comments)
+
+            # dnsmasq needs to be parsed first for it to check any duplicates
+            # then we format it back
+            if file == "dnsmasq":
+                continue
+
+            clean_list = check_dups(file, domain_list)
 
 
 if __name__ == "__main__":
