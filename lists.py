@@ -1,14 +1,24 @@
-from argparse import ArgumentParser
+import sys
+import argparse
 
-parser = ArgumentParser()
+parser = argparse.ArgumentParser()
 
-parser.add_argument("-i", "--add", type=str)
-parser.add_argument("-RD", "--remove-duplicates",
-                    action="store_true", default=False)
+parser.add_argument("-a", "--add",
+                    type=str, nargs="+", metavar="records",
+                    help="add an IP or domain name, will throw a warning if a domain/IP is already defined")
+
+parser.add_argument("-c", "-check", "--check-duplicates",
+                    action="store_true",
+                    help="checks for duplicates and prints them to the console")
+
+parser.add_argument("-rd", "--remove-duplicates",
+                    action="store_true",
+                    help="checks and removes any duplicates")
+
 
 args = parser.parse_args()
 
-_INDENT = " "*2*2
+_INDENT = " "*4
 
 
 def whitespace_join(arr: list[str]):
@@ -91,4 +101,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(2)
+    else:
+        main()
