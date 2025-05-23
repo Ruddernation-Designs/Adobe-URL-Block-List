@@ -14,7 +14,7 @@ if not exist %backup_hosts_file% (
 :: Check for admin privilages
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-	echo You're not running as administrator. Please re-run this script as Administrator or a terminal with elevated privilages.
+  echo You're not running as administrator. Please re-run this script as Administrator or a terminal with elevated privilages.
   goto term_error
 )
 
