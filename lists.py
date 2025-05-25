@@ -63,11 +63,13 @@ def dnsmasq_fmt(*domains: tuple[str]):
     return whitespace_join(domain_list)
 
 
-def check_dups(file_str: str, arr: list[tuple[int, str]]):
+def check_dups(file_str: str, input_list: list[tuple[int, str]]) -> tuple[list[str], list[str]]:
     deduped_set: set[str] = set()
     duplicates_list: list[tuple[int, str]] = []
 
-    for ln, item in arr:
+    clean_list = omit_ln(input_list)
+
+    for ln, item in input_list:
         if item in deduped_set:
             duplicates_list.append((ln, item))
         else:
@@ -77,7 +79,8 @@ def check_dups(file_str: str, arr: list[tuple[int, str]]):
 
     if len_dups == 0:
         print("From {}: no duplicates are found".format(file_str))
-        return omit_ln(arr)
+        
+        return clean_list, []
 
     print("From {}: found {} duplicate(s)\n\n{}\n".format(
         file_str,
@@ -85,7 +88,9 @@ def check_dups(file_str: str, arr: list[tuple[int, str]]):
         whitespace_join([f"{_INDENT} ln {ln} | {dl}" for ln, dl in duplicates_list])  # noqa
     ))
 
-    return list(deduped_set)
+    clean_list = list(deduped_set)
+
+    return clean_list, omit_ln(duplicates_list)
 
 
 def main():
@@ -107,7 +112,17 @@ def main():
             if file == "dnsmasq":
                 continue
 
-            clean_list = check_dups(file, domain_list)
+            clean_list, dup_list = check_dups(file, domain_list)
+            _root_dup_check.append((file, dup_list))
+
+        has_duplicates_found = any(v for _, v in _root_dup_check)
+        dup_length = len([fv for _, v in _root_dup_check for fv in v])
+
+        print(dup_length)
+
+        if has_duplicates_found:
+            print(f"Script has found duplicates: {dup_length}", "\n")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
