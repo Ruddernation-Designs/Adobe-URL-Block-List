@@ -95,7 +95,7 @@ def main():
     included_files = [
         ("hosts", True),
         ("dnsmasq", True),
-        ("PiHole", False)
+        ("pihole.txt", False)
     ]
 
     if args.remove_duplicates or args.check_duplicates:
