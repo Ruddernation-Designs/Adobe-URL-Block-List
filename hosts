@@ -4,7 +4,7 @@
 #
 # This file contains the mappings of IP addresses to host names. Each
 # entry should be kept on an individual line. The IP address should
-# be placed in the first column followed by the corresponding host name.
+# be placed in the first column, followed by the corresponding host name.
 # The IP address and the host name should be separated by at least one
 # space.
 #
@@ -21,8 +21,9 @@
 #	::1             localhost
 #	0.0.0.0       localhost
 
-#New Ver 26.3
+#New Ver 26.4
 0.0.0.0 adobe.io
+0.0.0.0 v62vpzg2av.adobestats.io
 0.0.0.0 a1815.dscr.akamai.net
 0.0.0.0 ims-na1.adobelogin.com.cdn.cloudflare.net
 0.0.0.0 o1383653.ingest.sentry.io
@@ -928,9 +929,7 @@
 0.0.0.0 adobe.demdex.net
 0.0.0.0 adobe.tt.omtrdc.net
 0.0.0.0 adobedc.demdex.net
-0.0.0.0 adobeid-na1.services.adobe.com
 0.0.0.0 auth-cloudfront.prod.ims.adobejanus.com
-0.0.0.0 auth.services.adobe.com
 0.0.0.0 cai-splunk-proxy.adobe.io
 0.0.0.0 cc-cdn.adobe.com
 0.0.0.0 cc-cdn.adobe.com.edgekey.net
