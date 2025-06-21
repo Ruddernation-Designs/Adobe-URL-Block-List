@@ -112,15 +112,13 @@ def main():
             if file == "dnsmasq":
                 continue
 
-            clean_list, dup_list = check_dups(file, domain_list)
+            _, dup_list = check_dups(file, domain_list)
             _root_dup_check.append((file, dup_list))
 
-        has_duplicates_found = any(v for _, v in _root_dup_check)
+        has_duplicates = any(v for _, v in _root_dup_check)
         dup_length = len([fv for _, v in _root_dup_check for fv in v])
 
-        print(dup_length)
-
-        if has_duplicates_found:
+        if has_duplicates:
             print(f"Script has found duplicates: {dup_length}", "\n")
             sys.exit(1)
 
