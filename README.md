@@ -27,7 +27,7 @@ You may need to check your settings to show hidden files, Once there, then overw
 
 ## Adding the records
 
-You'll need to have a version of Python 3.9 or higher to add the records and sync across `hosts`, `dnsamsq`, and `pihole.txt`.
+You'll need to have a version of Python 3.9 or higher installed to add the records and sync across `hosts`, `dnsamsq`, and `pihole.txt`.
 
 Add a domain name or IP with:
 
@@ -35,4 +35,4 @@ Add a domain name or IP with:
 py lists.py -a 192.168.0.0 domain.example.com
 ```
 
-The script will automatically warn you if a record already exists.
+The script will automatically warn you if a record already exists and skips it.
