@@ -14,12 +14,13 @@ if %errorlevel% neq 0 (
 )
 
 if not exist %backup_hosts_file% (
-  echo Created hosts.bak
   xcopy /s %sys_hosts_file% %backup_hosts_file%
+  echo Created hosts.bak
   goto term_ok
 )
 
 :add_hosts_record
+@rem TODO: add a wrapper like `## ADOBE_BLOCKLIST_START  ##` and `## ADOBE_BLOCKLIST_END  ##` so that it's easy to update and replace them later on
 
 
 :term_error
