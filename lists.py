@@ -116,11 +116,42 @@ def main():
     # We check for any duplicates so the script can return a proper exit status
     _root_dup_check = []
 
-    included_files = [
-        ("hosts", True),
-        ("dnsmasq", True),
-        ("pihole.txt", False)
-    ]
+    if args.add:
+        append_records = args.add
+
+        ip_regex = re.compile(r"^(?:\d{1,3}\.){3}\d{1,3}$")  # noqa
+        # Keeping the TLDs specific since there are these used by Adobe
+        domain_regex = re.compile(r"^(?!-)[A-Za-z0-9-]{1,63}(?<!-)\.(?:io|com|net)$")  # noqa
+
+        invalid_records = []
+
+        for record in append_records:
+            if ip_regex.match(record):
+                octets = list(map(int, record.split(".")))
+                if all(0 <= o <= 255 for o in octets):
+                    continue
+
+            elif domain_regex.match(record):
+                continue
+
+            invalid_records.append(record)
+
+            if invalid_records:
+                print(invalid_records)
+                print("Found {} IP/domain(s) are not valid:\n\n{}\n".format(
+                    len(invalid_records),
+                    whitespace_join([f"- {r}" for r in invalid_records])  # noqa
+                ))
+
+                sys.exit(1)
+
+        # Check for any matches for what the user will add, otherwise, append the files specified
+        for file, strip_comments in TRACKED_FILES:
+            domain_list = read_stripped(file, strip_comments=strip_comments)
+
+            if file == "dnsmasq":
+                dnsmasq_sanitized = dnsmasq_parser.strip(file)
+                continue
 
     if args.remove_duplicates or args.check_duplicates:
         for file, strip_comments in TRACKED_FILES:
