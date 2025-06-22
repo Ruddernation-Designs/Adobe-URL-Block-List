@@ -1,5 +1,6 @@
 import sys
 import argparse
+import re
 
 parser = argparse.ArgumentParser()
 
@@ -63,13 +64,6 @@ def read_stripped(file: str, strip_comments=True):
         raise e
 
 
-def dnsmasq_fmt(*domains: tuple[str]):
-    domain_list = [f"config domain\n{_INDENT}option name '{domain}'\n{_INDENT}option ip '0.0.0.0'\n"
-                   for domain in domains]
-
-    return whitespace_join(domain_list)
-
-
 def check_dups(file_str: str, input_list: list[tuple[int, str]]) -> tuple[list[str], list[str]]:
     deduped_set: set[str] = set()
     duplicates_list: list[tuple[int, str]] = []
@@ -86,7 +80,7 @@ def check_dups(file_str: str, input_list: list[tuple[int, str]]) -> tuple[list[s
 
     if len_dups == 0:
         print("From {}: no duplicates are found".format(file_str))
-        
+
         return clean_list, []
 
     print("From {}: found {} duplicate(s)\n\n{}\n".format(
@@ -98,6 +92,24 @@ def check_dups(file_str: str, input_list: list[tuple[int, str]]) -> tuple[list[s
     clean_list = list(deduped_set)
 
     return clean_list, omit_ln(duplicates_list)
+
+
+class dnsmasq_parser:
+    @staticmethod
+    def strip(file: str):
+        dnsmasq_list = read_stripped(file, strip_comments=True)
+        dnsmasq_list = [(i, x) for i, x in dnsmasq_list if "option name" in x]  # noqa
+
+        dnsmasq_list_clean = [(ln, re.sub(r"^option name|'", "", x).strip()) for ln, x in dnsmasq_list]  # noqa
+
+        return dnsmasq_list_clean
+
+    @staticmethod
+    def format(*domains: tuple[str]):
+        domain_list = [f"config domain\n{_INDENT}option name '{domain}'\n{_INDENT}option ip '0.0.0.0'\n"
+                       for domain in domains]
+
+        return whitespace_join(domain_list)
 
 
 def main():
@@ -117,6 +129,11 @@ def main():
             # dnsmasq needs to be parsed first for it to check any duplicates
             # then we format it back
             if file == "dnsmasq":
+                dnsmasq_sanitized = dnsmasq_parser.strip(file)
+
+                clean_dm_list, dm_dups = check_dups(file, dnsmasq_sanitized)
+
+                _root_dup_check.append((file, dm_dups))
                 continue
 
             clean_list, dup_list = check_dups(file, domain_list)
