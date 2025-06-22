@@ -18,6 +18,13 @@ parser.add_argument("-rd", "--remove-duplicates",
 
 args = parser.parse_args()
 
+# The second item in the tuple are for stripping comments from a file
+TRACKED_FILES = [
+    ("hosts", True),
+    ("dnsmasq", True),
+    ("pihole.txt", False)
+]
+
 _INDENT = " "*4
 
 
@@ -104,7 +111,7 @@ def main():
     ]
 
     if args.remove_duplicates or args.check_duplicates:
-        for file, strip_comments in included_files:
+        for file, strip_comments in TRACKED_FILES:
             domain_list = read_stripped(file, strip_comments=strip_comments)
 
             # dnsmasq needs to be parsed first for it to check any duplicates
@@ -112,7 +119,7 @@ def main():
             if file == "dnsmasq":
                 continue
 
-            _, dup_list = check_dups(file, domain_list)
+            clean_list, dup_list = check_dups(file, domain_list)
             _root_dup_check.append((file, dup_list))
 
         has_duplicates = any(v for _, v in _root_dup_check)
