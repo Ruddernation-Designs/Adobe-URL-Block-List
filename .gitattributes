@@ -1,2 +1,4 @@
-hosts     text eol=crlf
 *         text eol=lf
+
+hosts     text eol=crlf
+*.bat     eol=crlf
