@@ -109,7 +109,6 @@ tss-geotrust-crl.thawte.com
 uds.licenses.adobe.com
 dxyeyf6ecy.adobe.io
 1hzopx6nz7.adobe.io
-ic.adobe.io
 p13n.adobe.io
 ic.adobe.io
 wip1.adobe.com
