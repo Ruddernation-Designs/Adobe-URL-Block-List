@@ -1,8 +1,5 @@
-### Update: 
-I know it sometimes take me a few days to implement some of the pull requests, 
-but my health doesnt like playing nice unfortunately,
-So, I will get around to them as soon as I can.
-
+### Updates: I'm having a burst of energy, so will get around to checking out the recent updates and maybe adding my own, 
+so if you've any code that'll help then please let me know - Rudder.
 
 # Adobe-URL-Block-List
 
