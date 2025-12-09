@@ -1,6 +1,8 @@
-### Updates: 
-Im no longer on Windows, so ill be unable to test on that OS,
-Microsoft have turned Windows into spyware.
+### UPDATE
+
+I apologise about my rant 😂 
+Anyway i hope the block lists are working well.
+For those that celebrate Christmas then i wish you a merry Christmas and a happy new year 🎄🎅👍🖖
 # Adobe-URL-Block-List
 
 This is a curated list of all the Adobe URL/IP blocklist declared in the `hosts` file.
