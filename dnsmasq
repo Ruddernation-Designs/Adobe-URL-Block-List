@@ -3,6 +3,10 @@ config domain
         option ip '0.0.0.0'
 
 config domain
+        operation name 'x0850n5e.1q9cz.adobestats.io'
+        option ip '0.0.0.0'
+
+config domain
         option name 'vgetwxoqno.adobe.io'
         option ip '0.0.0.0'
 
