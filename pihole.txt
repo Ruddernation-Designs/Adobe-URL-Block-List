@@ -42,6 +42,7 @@
 162.247.242.20
 
 #domain names
+x0850n5e.1q9cz.adobestats.io
 3d5vic7so2.adobestats.io
 o987771.ingest.us.sentry.io
 a1815.dscr.akamai.net
