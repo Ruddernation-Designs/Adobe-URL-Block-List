@@ -1,8 +1,7 @@
-### UPDATE
+### Updates
 
-I apologise about my rant 😂 
-Anyway i hope the block lists are working well.
-For those that celebrate Christmas then i wish you a merry Christmas and a happy new year 🎄🎅👍🖖
+Happy New Year! 
+
 # Adobe-URL-Block-List
 
 This is a curated list of all the Adobe URL/IP blocklist declared in the `hosts` file.
