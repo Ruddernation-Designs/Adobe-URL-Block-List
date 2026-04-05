@@ -1,7 +1,3 @@
-### Updates
-
-Happy New Year! 
-
 # Adobe-URL-Block-List
 
 This is a curated list of all the Adobe URL/IP blocklist declared in the `hosts` file.
