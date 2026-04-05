@@ -774,6 +774,8 @@
 0.0.0.0 adobe-dns.adobe.de
 0.0.0.0 adobe.activate.com
 0.0.0.0 adobeereg.com
+0.0.0.0 aepxlg.adobe.com
+0.0.0.0 armmf.adobe.com
 0.0.0.0 cmdls.adobe.com
 0.0.0.0 crl.verisign.net
 0.0.0.0 ereg.adobe.com
@@ -795,6 +797,7 @@
 0.0.0.0 na2m-stg2.licenses.adobe.com
 0.0.0.0 na4r.services.adobe.com
 0.0.0.0 ocsp.spo1.verisign.com
+0.0.0.0 odin.adobe.com
 0.0.0.0 ood.opsource.net
 0.0.0.0 practivate.adobe
 0.0.0.0 practivate.adobe.
@@ -804,6 +807,7 @@
 0.0.0.0 practivate.adobe.newoa
 0.0.0.0 practivate.adobe.ntp
 0.0.0.0 prod-rel-ffc-ccm.oobesaas.adobe.com
+0.0.0.0 resources.licenses.adobe.com
 0.0.0.0 s-2.adobe.com
 0.0.0.0 s-3.adobe.com
 0.0.0.0 tss-geotrust-crl.thawte.com

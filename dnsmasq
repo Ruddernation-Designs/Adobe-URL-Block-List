@@ -2967,6 +2967,14 @@ config domain
         option ip '0.0.0.0'
 
 config domain
+        option name 'aepxlg.adobe.com'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'armmf.adobe.com'
+        option ip '0.0.0.0'
+
+config domain
         option name 'cmdls.adobe.com'
         option ip '0.0.0.0'
 
@@ -3051,6 +3059,10 @@ config domain
         option ip '0.0.0.0'
 
 config domain
+        option name 'odin.adobe.com'
+        option ip '0.0.0.0'
+
+config domain
         option name 'ood.opsource.net'
         option ip '0.0.0.0'
 
@@ -3084,6 +3096,10 @@ config domain
 
 config domain
         option name 'prod-rel-ffc-ccm.oobesaas.adobe.com'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'resources.licenses.adobe.com'
         option ip '0.0.0.0'
 
 config domain
