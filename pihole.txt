@@ -1,4 +1,11 @@
 #IP addresses
+23.22.254.206
+3.209.122.138
+18.154.7.93
+13.35.238.103
+4.144.73.197
+13.35.238.72
+13.35.238.108
 192.150.14.69
 192.150.18.101
 192.150.18.108
@@ -42,6 +49,7 @@
 162.247.242.20
 
 #domain names
+cc-api-data-stage.adobe.io
 x0850n5e.1q9cz.adobestats.io
 3d5vic7so2.adobestats.io
 o987771.ingest.us.sentry.io
