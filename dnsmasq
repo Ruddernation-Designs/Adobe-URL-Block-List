@@ -3,6 +3,10 @@ config domain
         option ip '0.0.0.0'
 
 config domain
+        option name 'cc-api-data-stage.adobe.io'
+        option ip '0.0.0.0'
+
+config domain
         operation name 'x0850n5e.1q9cz.adobestats.io'
         option ip '0.0.0.0'
 
@@ -2681,8 +2685,29 @@ config domain
 config domain
         option name '3.233.129.217'
         option ip '0.0.0.0'
-
 config domain
+        option name '3.209.122.138'
+        option ip '0.0.0.0'
+config domain
+        option name '23.22.254.206'
+        option ip '0.0.0.0'
+config domain
+        option name '18.154.7.93'
+        option ip '0.0.0.0'
+config domain
+        option name '13.35.238.103'
+        option ip '0.0.0.0'
+config domain
+        option name '54.144.73.197'
+        option ip '0.0.0.0'
+
+config domainconfig domain
+        option name '13.35.238.72'
+        option ip '0.0.0.0'
+config domain
+        option name '13.35.238.108'
+        option ip '0.0.0.0'
+
         option name '192.150.14.69'
         option ip '0.0.0.0'
 
