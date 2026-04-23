@@ -1,6 +1,9 @@
+# Updates.
+Thank you to everyone who has contributed and suggested IP's and domains.
+
 # Adobe-URL-Block-List
 
-This is a curated list of all the Adobe URL/IP blocklist declared in the `hosts` file.
+This is a curated list of all the Adobe URL/IP blocklists declared in the `hosts` file.
 
 If you have any extra domains/IPs, you can either fork this repository and follow instructions for [Adding the records](#adding-the-records) in your fork or by [opening an issue](https://github.com/Ruddernation-Designs/Adobe-URL-Block-List/issues/new).
 
@@ -8,11 +11,11 @@ If you have any extra domains/IPs, you can either fork this repository and follo
 
 ### Via a script
 
-Simply run `apply.bat` as Administrator and it will create a `hosts.bak` on the root of this repository so you can manually revert it later. Then adds the records from the `hosts` file on to your system.
+Simply run `apply.bat` as Administrator, and it will create a `hosts.bak` on the root of this repository so you can manually revert it later. Then adds the records from the `hosts` file onto your system.
 
 ### Applying the records manually
 
-The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc` or by opening the Run dialog with <kbd>Win</kbd>+ <kbd>R</kbd>, you can access it with:
+The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc`, or by opening the Run dialog with <kbd>Win</kbd>+ <kbd>R</kbd>, you can access it with:
 
 ```txt
 %windir%\System32\drivers\etc\hosts
@@ -21,9 +24,9 @@ The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc`
 > [!NOTE]
 > Be sure you keep a backup of your previous `hosts` file first!
 
-Make sure you run your text editor as with admin privilages, otherwise, you won't be able to save changes to the `hosts` file. Copy and paste the full list into the `hosts` file and save it. 
+Make sure you run your text editor as with admin privileges, otherwise, you won't be able to save changes to the `hosts` file. Copy and paste the full list into the `hosts` file and save it. 
 
-You may need to check your settings to show hidden files, Once there, then overwrite with the host file or add the full list to your host file.
+You may need to check your settings to show hidden files. Once there, overwrite with the host file or add the full list to your host file.
 
 ## Adding the records
 
@@ -35,7 +38,7 @@ Add a domain name or IP with:
 py lists.py -a 192.168.0.0 domain.example.com
 ```
 
-The script will automatically warn you if a record already exists and skips it.
+The script will automatically warn you if a record already exists and skip it.
 
 ## Checking for duplicates
 
@@ -45,7 +48,7 @@ You can also check for duplicates with `-c` or `--check` flags.
 py lists.py -c
 ```
 
-Likewise, using flags `-rd` or `--remove-duplicates` will automatically remove any duplicates and retroactively applies to all files.
+Likewise, using flags `-rd` or `--remove-duplicates` will automatically remove any duplicates and retroactively apply to all files.
 
 ```console
 py lists.py -rd
