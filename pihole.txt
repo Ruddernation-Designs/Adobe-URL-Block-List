@@ -14,7 +14,6 @@
 192.150.8.118
 199.7.52.190
 199.7.54.72
-209-34-83-73.ood.opsource.net
 209.34.83.67
 209.34.83.73
 18.207.85.246
@@ -49,6 +48,7 @@
 162.247.242.20
 
 #domain names
+209-34-83-73.ood.opsource.net
 cc-api-data-stage.adobe.io
 x0850n5e.1q9cz.adobestats.io
 3d5vic7so2.adobestats.io
