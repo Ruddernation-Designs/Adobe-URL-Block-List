@@ -90,3 +90,6 @@ jobs:
           # Reverting with nothing applied must fail with a clear message
           cmd /c revert.bat
           if ($LASTEXITCODE -eq 0) { throw 'Expected revert.bat to fail when nothing is applied' }
+
+          # The failure above is expected; don't let its exit code fail the step
+          exit 0
