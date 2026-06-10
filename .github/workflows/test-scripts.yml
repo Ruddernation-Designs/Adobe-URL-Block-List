@@ -1,0 +1,52 @@
+on: [push, pull_request]
+
+jobs:
+  shellcheck:
+    name: Lint shell scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        run: shellcheck apply.sh revert.sh
+
+  test-scripts:
+    name: Test apply/revert scripts
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test apply, idempotency, and revert
+        env:
+          ADOBE_BLOCKLIST_HOSTS_FILE: ${{ runner.temp }}/hosts
+        run: |
+          printf '127.0.0.1 localhost\n' > "$ADOBE_BLOCKLIST_HOSTS_FILE"
+          cp "$ADOBE_BLOCKLIST_HOSTS_FILE" "$ADOBE_BLOCKLIST_HOSTS_FILE.orig"
+
+          expected="$(grep -cEv '^[[:space:]]*(#|$)' hosts)"
+
+          ./apply.sh
+          applied="$(grep -c '^0\.0\.0\.0' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          [ "$applied" -eq "$expected" ] || { echo "Expected $expected records, found $applied"; exit 1; }
+
+          # Re-running must replace the block, not append duplicates
+          ./apply.sh
+          applied="$(grep -c '^0\.0\.0\.0' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          markers="$(grep -c 'ADOBE_BLOCKLIST_START' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          [ "$applied" -eq "$expected" ] || { echo "Re-apply duplicated records: $applied"; exit 1; }
+          [ "$markers" -eq 1 ] || { echo "Re-apply duplicated markers: $markers"; exit 1; }
+
+          # Revert must restore the original file exactly
+          ./revert.sh
+          diff "$ADOBE_BLOCKLIST_HOSTS_FILE" "$ADOBE_BLOCKLIST_HOSTS_FILE.orig"
+
+          # Reverting with nothing applied must fail with a clear message
+          if ./revert.sh; then
+            echo "Expected revert to fail when nothing is applied"
+            exit 1
+          fi
