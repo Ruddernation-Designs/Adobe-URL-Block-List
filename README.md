@@ -21,7 +21,14 @@ The list is also available as a `dnsmasq` configuration and as `pihole.txt` for 
 
 ### Windows
 
-Simply run `apply.bat` as Administrator, and it will create a `hosts.bak` on the root of this repository so you can manually revert it later. Then adds the records from the `hosts` file onto your system.
+Run `apply.bat` as Administrator. It will:
+
+- Back up your current `hosts` file to `hosts.bak` at the root of this repository (first run only)
+- Append the records, wrapped between `## ADOBE_BLOCKLIST_START ##` and `## ADOBE_BLOCKLIST_END ##` markers
+- Replace the existing block when re-run, so pulling the latest list and re-applying never duplicates records
+- Flush the DNS cache
+
+To remove the records later, run `revert.bat` as Administrator. Only the block between the markers is removed, everything else in your `hosts` file stays untouched.
 
 #### Applying the records manually
 
