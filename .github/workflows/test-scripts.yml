@@ -1,0 +1,95 @@
+on: [push, pull_request]
+
+jobs:
+  shellcheck:
+    name: Lint shell scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        run: shellcheck apply.sh revert.sh
+
+  test-scripts:
+    name: Test apply/revert scripts
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test apply, idempotency, and revert
+        env:
+          ADOBE_BLOCKLIST_HOSTS_FILE: ${{ runner.temp }}/hosts
+        run: |
+          printf '127.0.0.1 localhost\n' > "$ADOBE_BLOCKLIST_HOSTS_FILE"
+          cp "$ADOBE_BLOCKLIST_HOSTS_FILE" "$ADOBE_BLOCKLIST_HOSTS_FILE.orig"
+
+          expected="$(grep -cEv '^[[:space:]]*(#|$)' hosts)"
+
+          ./apply.sh
+          applied="$(grep -c '^0\.0\.0\.0' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          [ "$applied" -eq "$expected" ] || { echo "Expected $expected records, found $applied"; exit 1; }
+
+          # Re-running must replace the block, not append duplicates
+          ./apply.sh
+          applied="$(grep -c '^0\.0\.0\.0' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          markers="$(grep -c 'ADOBE_BLOCKLIST_START' "$ADOBE_BLOCKLIST_HOSTS_FILE")"
+          [ "$applied" -eq "$expected" ] || { echo "Re-apply duplicated records: $applied"; exit 1; }
+          [ "$markers" -eq 1 ] || { echo "Re-apply duplicated markers: $markers"; exit 1; }
+
+          # Revert must restore the original file exactly
+          ./revert.sh
+          diff "$ADOBE_BLOCKLIST_HOSTS_FILE" "$ADOBE_BLOCKLIST_HOSTS_FILE.orig"
+
+          # Reverting with nothing applied must fail with a clear message
+          if ./revert.sh; then
+            echo "Expected revert to fail when nothing is applied"
+            exit 1
+          fi
+
+  test-bat-scripts:
+    name: Test apply/revert batch scripts
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test apply, idempotency, and revert
+        env:
+          ADOBE_BLOCKLIST_HOSTS_FILE: ${{ runner.temp }}\hosts
+        shell: pwsh
+        run: |
+          Set-Content -Path $env:ADOBE_BLOCKLIST_HOSTS_FILE -Value '127.0.0.1 localhost'
+          $original = Get-Content $env:ADOBE_BLOCKLIST_HOSTS_FILE
+
+          $expected = (Get-Content hosts | Where-Object { $_ -notmatch '^\s*(#|$)' }).Count
+
+          cmd /c apply.bat
+          if ($LASTEXITCODE -ne 0) { throw 'apply.bat failed' }
+          $applied = (Get-Content $env:ADOBE_BLOCKLIST_HOSTS_FILE | Where-Object { $_ -match '^0\.0\.0\.0' }).Count
+          if ($applied -ne $expected) { throw "Expected $expected records, found $applied" }
+
+          # Re-running must replace the block, not append duplicates
+          cmd /c apply.bat
+          if ($LASTEXITCODE -ne 0) { throw 'apply.bat re-run failed' }
+          $applied = (Get-Content $env:ADOBE_BLOCKLIST_HOSTS_FILE | Where-Object { $_ -match '^0\.0\.0\.0' }).Count
+          $markers = (Get-Content $env:ADOBE_BLOCKLIST_HOSTS_FILE | Where-Object { $_ -match 'ADOBE_BLOCKLIST_START' }).Count
+          if ($applied -ne $expected) { throw "Re-apply duplicated records: $applied" }
+          if ($markers -ne 1) { throw "Re-apply duplicated markers: $markers" }
+
+          # Revert must restore the original file contents
+          cmd /c revert.bat
+          if ($LASTEXITCODE -ne 0) { throw 'revert.bat failed' }
+          $reverted = Get-Content $env:ADOBE_BLOCKLIST_HOSTS_FILE
+          if (Compare-Object $original $reverted) { throw 'Revert did not restore the original hosts file' }
+
+          # Reverting with nothing applied must fail with a clear message
+          cmd /c revert.bat
+          if ($LASTEXITCODE -eq 0) { throw 'Expected revert.bat to fail when nothing is applied' }
+
+          # The failure above is expected; don't let its exit code fail the step
+          exit 0
