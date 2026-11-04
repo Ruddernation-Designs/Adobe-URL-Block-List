@@ -48,6 +48,9 @@
 162.247.242.20
 
 #domain names
+r-bam.pswdata.com
+nr-bam.pswdata.com
+ss-prod-ue1-ns.aws.adobess.coms-prod-ue1-ns.aws.adobess.com
 209-34-83-73.ood.opsource.net
 cc-api-data-stage.adobe.io
 x0850n5e.1q9cz.adobestats.io
