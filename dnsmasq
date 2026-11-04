@@ -1,4 +1,12 @@
 config domain
+        option name 'nr-bam.pswdata.com'
+        option ip '0.0.0.0'
+
+config domain
+        option name 'ss-prod-ue1-ns.aws.adobess.com'
+        option ip 0.0.0.0'
+
+config domain
         option name 'adobe.io'
         option ip '0.0.0.0'
 
