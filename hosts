@@ -21,9 +21,11 @@
 #	::1             localhost
 #	0.0.0.0       localhost
 
-#New Ver 27.0
+#New Ver 28
 #domain names
 0.0.0.0 adobe.io
+0.0.0.0 nr-bam.pswdata.com
+0.0.0.0 ss-prod-ue1-ns.aws.adobess.com
 0.0.0.0 cc-api-data-stage.adobe.io
 0.0.0.0 x0850n5e.1q9cz.adobestats.io
 0.0.0.0 0ojupfm51u.adobe.io
