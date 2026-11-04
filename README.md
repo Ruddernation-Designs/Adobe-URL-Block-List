@@ -32,7 +32,7 @@ To remove the records later, run `revert.bat` as Administrator. Only the block b
 
 #### Applying the records manually
 
-The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc`, or by opening the Run dialog with <kbd>Win</kbd>+ <kbd>R</kbd>, you can access it with:
+The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc`, or by opening the Run dialog with <kbd>Win</kbd>+ <kbd>R</kbd> and access it with:
 
 ```txt
 %windir%\System32\drivers\etc\hosts
@@ -41,9 +41,9 @@ The location of the `hosts` file is located at `C:\Windows\System32\drivers\etc`
 > [!NOTE]
 > Be sure you keep a backup of your previous `hosts` file first!
 
-Make sure you run your text editor as with admin privileges, otherwise, you won't be able to save changes to the `hosts` file. Copy and paste the full list into the `hosts` file and save it.
+Make sure you run your text editor with admin privileges, otherwise, you won't be able to save changes to the `hosts` file. Copy and paste the full list into the `hosts` file and save it.
 
-You may need to check your settings to show hidden files. Once there, overwrite with the host file or add the full list to your host file.
+You may need to check your settings to show hidden files. Once there, overwrite the hosts file or add the full list to your hosts file.
 
 ### macOS and Linux
 
